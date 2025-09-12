@@ -44,6 +44,14 @@ class HeroService {
                     },
                     silhouette: {
                         fields: ["url", "alternativeText"],
+                    },
+                    hero_stories: {
+                        fields: ["title", "text"],
+                        populate: {
+                            image: {
+                                fields: ["url"]
+                            }
+                        }
                     }
                 }
             }

@@ -32,7 +32,7 @@ export interface IHero {
         alternativeText: string;
     },
 
-    stories: IHeroStory[]
+    hero_stories: IHeroStory[]
 }
 
 export interface IHeroStory {
@@ -40,7 +40,11 @@ export interface IHeroStory {
     documentId: string,
     title: string,
     text: string,
-    image: string
+    image: {
+        url: string,
+        alternativeText: string;
+
+    }
 }
 
 export interface IHeroResponse{
