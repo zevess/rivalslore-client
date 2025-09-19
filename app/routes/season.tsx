@@ -16,6 +16,6 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
     return seasonData.data
 }
 
-export default function Seasons({ loaderData }: Route.ComponentProps) {
+export default function Season({ loaderData }: Route.ComponentProps) {
     return <SeasonPage />
 }

@@ -2,7 +2,6 @@ import React from 'react'
 import type { IHero } from '~/entities/hero/model/hero.types'
 import { HeroCard } from '~/entities/hero/ui/hero-card'
 
-
 interface Props {
     className?: string,
     heroes: IHero[]

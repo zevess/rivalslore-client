@@ -27,13 +27,20 @@
     "@react-router/dev": "^7.7.1",
     "@tailwindcss/vite": "^4.1.4",
     "@types/node": "^20",
+<<<<<<< HEAD
+=======
+    "@types/qs": "^6.14.0",
+>>>>>>> f3bfd504e8558e1db6997e2c9fe24e97057e6042
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "tailwindcss": "^4.1.4",
     "tw-animate-css": "^1.3.8",
     "typescript": "^5.8.3",
     "vite": "^6.3.3",
+<<<<<<< HEAD
     "vite-plugin-devtools-json": "^1.0.0",
+=======
+>>>>>>> f3bfd504e8558e1db6997e2c9fe24e97057e6042
     "vite-tsconfig-paths": "^5.1.4"
   }
 }
