@@ -3,9 +3,9 @@ import type { Route } from "./+types/season";
 import { SeasonPage } from "~/pages/season";
 
 
-export function meta({ }: Route.MetaArgs) {
+export function meta({ matches}: Route.MetaArgs) {
     return [
-        { title: "Сезоны" },
+        { title: matches[2].loaderData.title },
         { name: "description", content: "Welcome to React Router!" },
     ];
 }
@@ -17,5 +17,5 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
 }
 
 export default function Season({ loaderData }: Route.ComponentProps) {
-    return <SeasonPage />
+    return <SeasonPage seasonData={loaderData} />
 }

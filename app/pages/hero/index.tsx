@@ -11,8 +11,13 @@ interface Props {
 }
 
 export const HeroPage: React.FC<Props> = ({ className, hero }) => {
+
+    React.useEffect(() => {
+        document.body.classList.add('no-scrollbar');
+    }, []);
+
     return (
-        <div className="relative">
+        <div className="relative pl-2">
 
             <StrapiImage
                 src={hero.silhouette.url}

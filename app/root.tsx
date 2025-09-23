@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="flex flex-col min-h-screen no-scrollbar">
+      <body className="flex flex-col min-h-screen custom-scrollbar ">
         {children}
         <ScrollRestoration />
         <Scripts />

@@ -1,5 +1,5 @@
 import { api } from "~/shared/api/api.interceptor";
-import { type IHero, type IHeroesResponse, type IHeroResponse } from "./hero.types";
+import { type IHeroesResponse, type IHeroResponse } from "./hero.types";
 import { API_URL } from "~/shared/config/api.config";
 
 
@@ -42,7 +42,7 @@ class HeroService {
         })
         return data
     }
-    //http://localhost:1337/api/hero-stories?filters[hero][slug]=iron-man
+
     async getHeroStories(heroSlug: string) {
         const { data } = await api<IHeroResponse>({
             url: API_URL.heroStories(),
@@ -64,19 +64,5 @@ class HeroService {
     }
 
 }
-//signature: {
-//     fields: ["url", "alternativeText"],
-// },
-// logo: {
-//     fields: ["url", "alternativeText"],
-// },
-// portrait: {
-//     fields: ["url", "alternativeText"],
-// },
-// prestige: {
-//     fields: ["url", "alternativeText"],
-// },
-// silhouette: {
-//     fields: ["url", "alternativeText"],
-// },
+
 export const heroService = new HeroService()

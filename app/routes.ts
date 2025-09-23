@@ -9,6 +9,13 @@ export default [
         route("seasons", "routes/seasons.tsx"),
         route("seasons/:slug", "routes/season.tsx"),
 
+        route("events", "routes/events.tsx"),
+        route("events/:slug", "routes/event.tsx"),
+
+        route("locations", "routes/locations.tsx"),
+        route("locations/:slug", "routes/location.tsx"),
+
+        route("items", "routes/items.tsx")
     ])
 
 

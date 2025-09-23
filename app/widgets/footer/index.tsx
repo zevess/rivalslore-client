@@ -1,6 +1,7 @@
 import React from 'react'
 import { getNavigationItems } from '../header/model/hooks/getNavigationItems'
 import { Link } from 'react-router'
+import { getNavigationFooterItems } from './model/hooks/getNavigationFooterItems'
 
 interface Props {
     className?: string
@@ -8,7 +9,7 @@ interface Props {
 
 export const Footer: React.FC<Props> = ({ className }) => {
 
-    const items = getNavigationItems()
+    const items = getNavigationFooterItems()
 
     return (
         <footer className='bg-black w-full p-3 flex justify-around sticky bottom-0 z-50 md:hidden '>

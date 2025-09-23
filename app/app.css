@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import "tailwindcss";
+@plugin "@tailwindcss/typography";
 @import "tw-animate-css";
 
 @custom-variant dark (&:is(.dark *));
@@ -11,11 +12,15 @@
 
 html,
 body {
-  @apply bg-white dark:bg-gray-950;
+  @apply bg-white dark:bg-gray-950 text-white;
 
   @media (prefers-color-scheme: dark) {
     color-scheme: dark;
   }
+}
+
+a{
+  @apply transition duration-200
 }
 
 @theme inline {
@@ -135,7 +140,7 @@ body {
 }
 
 .no-scrollbar{
-  @apply [&::-webkit-scrollbar]:w-0
+  @apply [&::-webkit-scrollbar]:!hidden
 }
 
 .custom-scrollbar{

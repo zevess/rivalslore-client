@@ -7,5 +7,13 @@ export const API_URL = {
     heroStories: () => API_URL.root(`/hero-stories`),
 
     seasons: (url = '') => API_URL.root(`/seasons${url}`),
-    season: (slug = '') => API_URL.seasons(`/${slug}`)
+    season: (slug = '') => API_URL.seasons(`/${slug}`),
+
+    events: (url = '') => API_URL.root(`/events${url}`),
+    event: (slug = '') => API_URL.events(`/${slug}`),
+
+    locations: (url = '') => API_URL.root(`/locations${url}`),
+    location: (slug = '') => API_URL.locations(`/${slug}`),
+
+    items: (url ='') => API_URL.root(`/items${url}`)
 }

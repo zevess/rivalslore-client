@@ -10,8 +10,14 @@ interface Props {
 export const HeroesPage: React.FC<Props> = ({ className, heroes }) => {
     return (
         <div className="flex flex-col gap-6">
-            <h1 className="text-6xl text-white font-semibold flex justify-center">ГЕРОИ</h1>
-            <div className="flex flex-wrap justify-evenly md:justify-normal gap-4">
+            <h1 className="text-4xl md:text-6xl text-white font-semibold flex justify-center">ГЕРОИ</h1>
+            <div className="flex flex-wrap justify-center md:justify-normal gap-4">
+                {heroes.map((hero, index) => (
+                    <HeroCard heroData={hero} key={index} />
+                ))}
+                {heroes.map((hero, index) => (
+                    <HeroCard heroData={hero} key={index} />
+                ))}
                 {heroes.map((hero, index) => (
                     <HeroCard heroData={hero} key={index} />
                 ))}

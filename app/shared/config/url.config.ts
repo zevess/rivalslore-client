@@ -7,10 +7,14 @@ export const PUBLIC_URL = {
     hero: (slug = '') => PUBLIC_URL.heroes(`/${slug}`),
 
     events: (url = '') => PUBLIC_URL.root(`/events${url}`),
-    eventId: (documentId = '') => PUBLIC_URL.events(`/${documentId}`),
+    event: (slug = '') => PUBLIC_URL.events(`/${slug}`),
 
     seasons: (url = '') => PUBLIC_URL.root(`/seasons${url}`),
-    seasonsId: (slug = '') => PUBLIC_URL.seasons(`/${slug}`),
+    season: (slug = '') => PUBLIC_URL.seasons(`/${slug}`),
+
+    locations: (url = '') => PUBLIC_URL.root(`/locations${url}`),
+    location: (slug = '') => PUBLIC_URL.locations(`/${slug}`),
     
+    items: (url ='') => PUBLIC_URL.root(`/items${url}`)
 
 }
