@@ -14,7 +14,10 @@ export const PUBLIC_URL = {
 
     locations: (url = '') => PUBLIC_URL.root(`/locations${url}`),
     location: (slug = '') => PUBLIC_URL.locations(`/${slug}`),
-    
-    items: (url ='') => PUBLIC_URL.root(`/items${url}`)
+
+    items: (url = '') => PUBLIC_URL.root(`/items${url}`),
+
+    storylines: (url = '') => PUBLIC_URL.root(`/storylines${url}`),
+    storyline: (slug = '') => PUBLIC_URL.storylines(`/${slug}`)
 
 }

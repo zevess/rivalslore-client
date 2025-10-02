@@ -4,9 +4,16 @@ export interface IHero {
     name: string,
     nick: string,
     slug: string,
-    introduction: string,
+    description: string,
     quote: string,
-    lore: string,
+    biography: string,
+
+    nameRu: string,
+    nickRu: string,
+    slugRu: string,
+    descriptionRu: string,
+    quoteRu: string,
+    biographyRu: string,
 
     logo: IHeroImage
     portrait: IHeroImage
@@ -21,8 +28,13 @@ export interface IHero {
 export interface IHeroStory {
     id: string,
     documentId: string,
+    
     title: string,
     text: string,
+
+    titleRu: string,
+    textRu: string,
+
     image: IHeroImage
 }
 

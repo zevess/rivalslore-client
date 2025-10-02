@@ -9,8 +9,9 @@ export function meta({ }: Route.MetaArgs) {
     ];
 }
 
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+export async function loader({ params }: Route.LoaderArgs) {
     const heroesData = await heroService.getAllHeroes()
+    console.log(heroesData.data)
     return heroesData.data
 }
 

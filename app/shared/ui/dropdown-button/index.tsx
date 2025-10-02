@@ -51,14 +51,14 @@ export const DropdownButton: React.FC<Props> = ({ className, items }) => {
             <div
                 className={`absolute right-0 w-fit bg-black p-4 ${isOpen ? 'flex' : 'hidden'} flex-col gap-3`}>
                 {items.map((item, index) => (
-                    <Link
-                        to={item.url}
+                    <a
+                        href={item.url}
                         key={index}
                         className='text-white font-semibold uppercase hover:text-yellow-400 transition duration-200'
                         onClick={handleLinkClick}
                     >
                         {item.title}
-                    </Link>
+                    </a>
                 ))}
             </div>
         </div>

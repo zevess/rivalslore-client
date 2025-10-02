@@ -21,7 +21,7 @@ export const Header: React.FC<Props> = ({ className }) => {
 
             <div className='hidden md:flex items-center gap-6'>
                 {items.map((item, index) => (
-                    <Link to={item.url} key={index} className='text-white font-semibold uppercase hover:text-yellow-400 transition duration-200'>{item.title}</Link>
+                    <a href={item.url} key={index} className='text-white font-semibold uppercase hover:text-yellow-400 transition duration-200'>{item.title}</a>
                 ))}
             </div>
 

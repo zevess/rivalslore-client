@@ -15,6 +15,9 @@ class SeasonService {
                     cover: {
                         fields: ["url", "alternativeText"],
                     },
+                },
+                sort:{
+                    createdAt: "asc"
                 }
             }
         })

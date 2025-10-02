@@ -22,6 +22,10 @@ export const getNavigationItems = (): INavItem[] => {
         {
             title: "ПРЕДМЕТЫ",
             url: PUBLIC_URL.items()
+        },
+        {
+            title: "СЮЖЕТ",
+            url: PUBLIC_URL.storylines()
         }
     ]
 }

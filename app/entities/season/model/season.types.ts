@@ -4,6 +4,8 @@ export interface ISeason {
     title: string,
     slug: string,
     
+    titleRu: string,
+
     cover: {
         url: string;
         alternativeText: string;
@@ -17,6 +19,8 @@ export interface ISeasonStory {
     documentId: string,
     title: string,
     text: string,
+    titleRu: string, 
+    textRu: string
     image: {
         url: string,
         alternativeText: string;

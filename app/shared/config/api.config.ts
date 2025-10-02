@@ -15,5 +15,8 @@ export const API_URL = {
     locations: (url = '') => API_URL.root(`/locations${url}`),
     location: (slug = '') => API_URL.locations(`/${slug}`),
 
-    items: (url ='') => API_URL.root(`/items${url}`)
+    items: (url ='') => API_URL.root(`/items${url}`),
+
+    storylines: (url ='') => API_URL.root(`/storylines${url}`),
+    storyline: (slug = '') => API_URL.storylines(`/${slug}`)
 }

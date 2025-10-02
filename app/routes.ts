@@ -15,7 +15,10 @@ export default [
         route("locations", "routes/locations.tsx"),
         route("locations/:slug", "routes/location.tsx"),
 
-        route("items", "routes/items.tsx")
+        route("items", "routes/items.tsx"),
+
+        route("storylines", "routes/storylines.tsx"),
+        route("storylines/:slug", "routes/storyline.tsx")
     ])
 
 

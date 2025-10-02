@@ -16,7 +16,7 @@ export const EventPage: React.FC<Props> = ({ className, event }) => {
         <div className="flex flex-col gap-6">
             <div className='flex flex-col items-center gap-3'>
                 <h1 className="text-4xl md:text-6xl text-white font-semibold flex justify-center">{event.title}</h1>
-                <Link to={PUBLIC_URL.season(event.season.slug)} className='p-2 uppercase font-medium text-xl text-black bg-yellow-400 hover:bg-amber-500'>{event.season.title}</Link>
+                <a href={PUBLIC_URL.season(event.season.slug)} className='p-2 uppercase font-medium text-xl text-black bg-yellow-400 hover:bg-amber-500'>{event.season.title}</a>
             </div>
 
             <div className="flex flex-col gap-4">

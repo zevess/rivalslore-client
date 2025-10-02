@@ -10,7 +10,7 @@ export function meta({ matches}: Route.MetaArgs) {
     ];
 }
 
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+export async function loader({ params }: Route.LoaderArgs) {
     const heroData = await heroService.getHero(params.slug)
     return heroData
 }

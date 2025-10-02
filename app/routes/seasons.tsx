@@ -9,7 +9,7 @@ export function meta({ }: Route.MetaArgs) {
     ];
 }
 
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+export async function loader({ params }: Route.LoaderArgs) {
     const seasonsData = await seasonService.getAllSeasons()
     return seasonsData.data
 }

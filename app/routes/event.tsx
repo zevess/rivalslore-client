@@ -10,7 +10,7 @@ export function meta({ matches }: Route.MetaArgs) {
     ];
 }
 
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+export async function loader({ params }: Route.LoaderArgs) {
     const eventData = await eventService.getEvent(params.slug)
     return eventData.data
 }

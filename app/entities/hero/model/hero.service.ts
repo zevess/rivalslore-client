@@ -17,6 +17,12 @@ class HeroService {
                     prestige: {
                         fields: ["url", "alternativeText"],
                     }
+                },
+                pagination:{
+                    pageSize: 50
+                },
+                sort:{
+                    nick: "asc"
                 }
             }
         })

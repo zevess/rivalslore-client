@@ -9,7 +9,7 @@ export function meta({ matches }: Route.MetaArgs) {
     ];
 }
 
-export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+export async function loader({ params }: Route.LoaderArgs) {
     const locationsData = await locationService.getAllLocations()
     console.log(locationsData.data)
     return locationsData.data
