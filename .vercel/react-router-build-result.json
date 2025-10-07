@@ -1,0 +1,298 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "root": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/heroes": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/hero": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/seasons": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/season": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/events": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/event": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/locations": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/location": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/items": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/storylines": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/storyline": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "app/root.tsx",
+        "path": "",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "widgets/layout/index": {
+        "id": "widgets/layout/index",
+        "parentId": "root",
+        "file": "app/widgets/layout/index.tsx",
+        "config": {}
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/home.tsx",
+        "index": true,
+        "config": {}
+      },
+      "routes/heroes": {
+        "id": "routes/heroes",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/heroes.tsx",
+        "path": "heroes",
+        "config": {}
+      },
+      "routes/hero": {
+        "id": "routes/hero",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/hero.tsx",
+        "path": "heroes/:slug",
+        "config": {}
+      },
+      "routes/seasons": {
+        "id": "routes/seasons",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/seasons.tsx",
+        "path": "seasons",
+        "config": {}
+      },
+      "routes/season": {
+        "id": "routes/season",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/season.tsx",
+        "path": "seasons/:slug",
+        "config": {}
+      },
+      "routes/events": {
+        "id": "routes/events",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/events.tsx",
+        "path": "events",
+        "config": {}
+      },
+      "routes/event": {
+        "id": "routes/event",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/event.tsx",
+        "path": "events/:slug",
+        "config": {}
+      },
+      "routes/locations": {
+        "id": "routes/locations",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/locations.tsx",
+        "path": "locations",
+        "config": {}
+      },
+      "routes/location": {
+        "id": "routes/location",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/location.tsx",
+        "path": "locations/:slug",
+        "config": {}
+      },
+      "routes/items": {
+        "id": "routes/items",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/items.tsx",
+        "path": "items",
+        "config": {}
+      },
+      "routes/storylines": {
+        "id": "routes/storylines",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/storylines.tsx",
+        "path": "storylines",
+        "config": {}
+      },
+      "routes/storyline": {
+        "id": "routes/storyline",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/storyline.tsx",
+        "path": "storylines/:slug",
+        "config": {}
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/Vladislav/Documents/progg/REACT/rivalslore/client/app",
+    "basename": "/",
+    "buildDirectory": "C:/Users/Vladislav/Documents/progg/REACT/rivalslore/client/build",
+    "future": {
+      "v8_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "id": "root",
+        "file": "root.tsx",
+        "path": ""
+      },
+      "widgets/layout/index": {
+        "id": "widgets/layout/index",
+        "parentId": "root",
+        "file": "widgets/layout/index.tsx"
+      },
+      "routes/home": {
+        "id": "routes/home",
+        "parentId": "widgets/layout/index",
+        "file": "routes/home.tsx",
+        "index": true
+      },
+      "routes/heroes": {
+        "id": "routes/heroes",
+        "parentId": "widgets/layout/index",
+        "file": "routes/heroes.tsx",
+        "path": "heroes"
+      },
+      "routes/hero": {
+        "id": "routes/hero",
+        "parentId": "widgets/layout/index",
+        "file": "routes/hero.tsx",
+        "path": "heroes/:slug"
+      },
+      "routes/seasons": {
+        "id": "routes/seasons",
+        "parentId": "widgets/layout/index",
+        "file": "routes/seasons.tsx",
+        "path": "seasons"
+      },
+      "routes/season": {
+        "id": "routes/season",
+        "parentId": "widgets/layout/index",
+        "file": "routes/season.tsx",
+        "path": "seasons/:slug"
+      },
+      "routes/events": {
+        "id": "routes/events",
+        "parentId": "widgets/layout/index",
+        "file": "routes/events.tsx",
+        "path": "events"
+      },
+      "routes/event": {
+        "id": "routes/event",
+        "parentId": "widgets/layout/index",
+        "file": "routes/event.tsx",
+        "path": "events/:slug"
+      },
+      "routes/locations": {
+        "id": "routes/locations",
+        "parentId": "widgets/layout/index",
+        "file": "routes/locations.tsx",
+        "path": "locations"
+      },
+      "routes/location": {
+        "id": "routes/location",
+        "parentId": "widgets/layout/index",
+        "file": "routes/location.tsx",
+        "path": "locations/:slug"
+      },
+      "routes/items": {
+        "id": "routes/items",
+        "parentId": "widgets/layout/index",
+        "file": "routes/items.tsx",
+        "path": "items"
+      },
+      "routes/storylines": {
+        "id": "routes/storylines",
+        "parentId": "widgets/layout/index",
+        "file": "routes/storylines.tsx",
+        "path": "storylines"
+      },
+      "routes/storyline": {
+        "id": "routes/storyline",
+        "parentId": "widgets/layout/index",
+        "file": "routes/storyline.tsx",
+        "path": "storylines/:slug"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true,
+    "unstable_routeConfig": [
+      {
+        "id": "root",
+        "path": "",
+        "file": "root.tsx",
+        "children": [
+          {
+            "file": "widgets/layout/index.tsx",
+            "children": [
+              {
+                "file": "routes/home.tsx",
+                "index": true
+              },
+              {
+                "file": "routes/heroes.tsx",
+                "path": "heroes"
+              },
+              {
+                "file": "routes/hero.tsx",
+                "path": "heroes/:slug"
+              },
+              {
+                "file": "routes/seasons.tsx",
+                "path": "seasons"
+              },
+              {
+                "file": "routes/season.tsx",
+                "path": "seasons/:slug"
+              },
+              {
+                "file": "routes/events.tsx",
+                "path": "events"
+              },
+              {
+                "file": "routes/event.tsx",
+                "path": "events/:slug"
+              },
+              {
+                "file": "routes/locations.tsx",
+                "path": "locations"
+              },
+              {
+                "file": "routes/location.tsx",
+                "path": "locations/:slug"
+              },
+              {
+                "file": "routes/items.tsx",
+                "path": "items"
+              },
+              {
+                "file": "routes/storylines.tsx",
+                "path": "storylines"
+              },
+              {
+                "file": "routes/storyline.tsx",
+                "path": "storylines/:slug"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
