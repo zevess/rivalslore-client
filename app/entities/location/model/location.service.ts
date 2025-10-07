@@ -12,6 +12,9 @@ class LocationService {
                     preview: {
                         fields: ["url", "alternativeText"],
                     },
+                },
+                sort:{
+                    createdAt: "asc"
                 }
             }
         })

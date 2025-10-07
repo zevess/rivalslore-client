@@ -12,7 +12,7 @@ interface Props {
 export const HeroCard: React.FC<Props> = ({ className, heroData }) => {
     return (
         <a href={PUBLIC_URL.hero(heroData.slug)}>
-            <div className={cn("relative w-fit h-[250px] md:h-[300px] bg-gray-200 transition-transform duration-200 border-transparent cursor-pointer hover:scale-110 hover:border-2 hover:border-yellow-400 ", className)}>
+            <div className={cn("relative w-fit h-[250px] md:h-[300px] bg-gray-200 transition-transform duration-200 border-transparent cursor-pointer hover:scale-110 hover:border-2 hover:border-yellow-400", className)}>
 
                 <StrapiImage src={heroData.portrait_card.url} alt={''} className='h-full object-contain' />
                 <div className='absolute bottom-0 p-1 md:p-2 h-20 bg-slate-700/80 backdrop-opacity-10 w-full'>

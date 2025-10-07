@@ -5,17 +5,16 @@ import type { Route } from "./+types/hero";
 
 export function meta({ matches}: Route.MetaArgs) {
     return [
-        { title: matches[2].loaderData.data.nick },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: matches[2].loaderData.nickRu },
+        { name: "description", content: "Информация о герое " + matches[2].loaderData.nickRu },
     ];
 }
 
 export async function loader({ params }: Route.LoaderArgs) {
     const heroData = await heroService.getHero(params.slug)
-    return heroData
+    return heroData.data
 }
 
 export default function Hero({ loaderData }: Route.ComponentProps) {
-    const hero = loaderData.data
-    return <HeroPage hero={hero} />
+    return <HeroPage hero={loaderData} />
 }

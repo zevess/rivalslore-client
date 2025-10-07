@@ -1,9 +1,7 @@
 import React from 'react'
-import { SeasonCard } from '~/entities/season/ui/season-card'
-import type { IStoryline, IStorylineResponse, IStorylinesResponse } from '~/entities/storyline/model/storyline.types'
+import type { IStoryline } from '~/entities/storyline/model/storyline.types'
 import { StorylineCard } from '~/entities/storyline/ui/storyline-card'
-import { PUBLIC_URL } from '~/shared/config/url.config'
-import SlideScale from '~/shared/ui/carousel-scale'
+
 
 interface Props {
     className?: string,
@@ -17,7 +15,7 @@ export const StorylinesPage: React.FC<Props> = ({ className, storylines }) => {
             <div className="flex flex-wrap justify-center gap-8 md:mx-16">
 
                 {storylines.map((storyline, index) => (
-                    <a className='text-4xl hover:text-yellow-400' href={PUBLIC_URL.storyline(storyline.slug)} key={index}>Сюжет {storyline.title}</a>
+                    <StorylineCard storyline={storyline} key={index} />
                 ))}
 
             </div>

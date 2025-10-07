@@ -1,7 +1,6 @@
 import { api } from "~/shared/api/api.interceptor";
-import { type ISeason, type ISeasonResponse, type ISeasonsResponse } from "./season.types";
+import { type ISeasonResponse, type ISeasonsResponse } from "./season.types";
 import { API_URL } from "~/shared/config/api.config";
-import type { IHeroesResponse } from "~/entities/hero/model/hero.types";
 
 
 class SeasonService {

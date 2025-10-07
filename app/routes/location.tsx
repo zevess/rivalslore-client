@@ -4,8 +4,8 @@ import type { Route } from "./+types/location";
 
 export function meta({ matches }: Route.MetaArgs) {
     return [
-        { title: "Локации" },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: matches[2].loaderData.title },
+        { name: "description", content: "Информация о локации " + matches[2].loaderData.title  },
     ];
 }
 

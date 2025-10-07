@@ -7,7 +7,11 @@ class EventService {
         const { data } = await api<IEventsResponse>({
             url: API_URL.events(),
             method: "GET",
-
+            params: {
+                sort: {
+                    createdAt: "asc"
+                }
+            }
         })
         return data
     }

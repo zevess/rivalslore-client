@@ -5,7 +5,7 @@ import { StorylinesPage } from "~/pages/storylines";
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "Сюжетные линии" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Сюжеты Marvel Rivals" },
     ];
 }
 

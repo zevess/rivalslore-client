@@ -1,6 +1,6 @@
 import React from 'react'
 import { StrapiImage } from '~/shared/ui/strapi-image'
-import type { IHero, IHeroResponse } from '../../model/hero.types'
+import type { IHero } from '../../model/hero.types'
 
 interface Props {
     className?: string,

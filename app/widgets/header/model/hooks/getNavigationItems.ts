@@ -8,12 +8,12 @@ export const getNavigationItems = (): INavItem[] => {
             url: PUBLIC_URL.heroes()
         },
         {
-            title: "ИВЕНТЫ",
-            url: PUBLIC_URL.events()
-        },
-        {
             title: "СЕЗОНЫ",
             url: PUBLIC_URL.seasons()
+        },
+        {
+            title: "ИВЕНТЫ",
+            url: PUBLIC_URL.events()
         },
         {
             title: "ЛОКАЦИИ",

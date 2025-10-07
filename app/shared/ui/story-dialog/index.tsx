@@ -15,11 +15,13 @@ export const StoryDialog: React.FC<Props> = ({ className, children, title, text 
             <DialogTrigger asChild>
                 {children}
             </DialogTrigger>
-            <DialogContent className='h-[80%] w-full overflow-y-auto bg-transparent text-white border-0 custom-scrollbar shadow-none'>
+            <DialogContent className='h-[80%] w-full max-w-2xl overflow-y-auto bg-transparent text-white border-0 custom-scrollbar shadow-none'>
                 <DialogHeader className='sticky'>
-                    <DialogTitle className='text-center'>{title}</DialogTitle>
+                    <DialogTitle className='text-center text-2xl font-bold'>{title}</DialogTitle>
                 </DialogHeader>
-                <ReactMarkdown>{text}</ReactMarkdown>
+                <div className='text-lg flex flex-col gap-5'>
+                    <ReactMarkdown>{text}</ReactMarkdown>
+                </div>
             </DialogContent>
         </Dialog>
     )

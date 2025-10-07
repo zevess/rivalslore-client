@@ -6,7 +6,7 @@ import { ItemsPage } from "~/pages/items";
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "Предметы" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Предметы Marvel Rivals" },
     ];
 }
 

@@ -4,6 +4,11 @@ export interface ILocation {
     title: string,
     text: string,
     description: string,
+
+    titleRu: string,
+    textRu: string,
+    descriptionRu: string,
+
     slug: string,
     preview: ILocationImage,
     gallery: ILocationImage[],
@@ -15,6 +20,10 @@ export interface ILocationStories {
     documentId: string,
     title: string,
     text: string,
+
+    titleRu: string,
+    textRu: string,
+
     image: ILocationImage
 }
 

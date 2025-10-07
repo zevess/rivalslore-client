@@ -11,9 +11,9 @@ export const ItemsPage: React.FC<Props> = ({ className, items }) => {
     return (
         <div className="flex flex-col gap-6">
             <h1 className="text-4xl md:text-6xl text-white font-semibold flex justify-center">ПРЕДМЕТЫ</h1>
-            <div className="flex flex-wrap justify-center md:mx-16 gap-8">
+            <div className="flex flex-col flex-wrap justify-center md:mx-16 gap-8">
                 {items.map((item, index) => (
-                    <Item item={item} key={index}/>
+                    <Item item={item} key={index} />
                 ))}
             </div>
         </div>

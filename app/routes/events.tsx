@@ -5,7 +5,7 @@ import { EventsPage } from "~/pages/events";
 export function meta({ matches }: Route.MetaArgs) {
     return [
         { title: "Ивенты" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Ивенты Marvel Rivals" },
     ];
 }
 

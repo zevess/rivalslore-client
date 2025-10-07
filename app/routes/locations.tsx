@@ -5,7 +5,7 @@ import type { Route } from "./+types/locations";
 export function meta({ matches }: Route.MetaArgs) {
     return [
         { title: "Локации" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Локации Marvel Rivals" },
     ];
 }
 

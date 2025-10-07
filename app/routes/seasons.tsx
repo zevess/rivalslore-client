@@ -5,7 +5,7 @@ import { SeasonsPage } from "~/pages/seasons";
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "Сезоны" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Сезоны Marvel Rivals" },
     ];
 }
 

@@ -146,3 +146,12 @@ a{
 .custom-scrollbar{
   @apply [&::-webkit-scrollbar]:w-2 [&::-webkit-scrollbar-track]:bg-slate-700 [&::-webkit-scrollbar-thumb]:bg-gray-300 dark:[&::-webkit-scrollbar-track]:bg-neutral-700 dark:[&::-webkit-scrollbar-thumb]:bg-neutral-500
 }
+
+.markdown > * {
+  all: revert;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}

@@ -15,15 +15,6 @@ export const LocationsPage: React.FC<Props> = ({ className, locations }) => {
                 {locations.map((location, index) => (
                     <LocationCard location={location} key={index} />
                 ))}
-                {locations.map((location, index) => (
-                    <LocationCard location={location} key={index} />
-                ))}
-                {locations.map((location, index) => (
-                    <LocationCard location={location} key={index} />
-                ))}
-                {locations.map((location, index) => (
-                    <LocationCard location={location} key={index} />
-                ))}
             </div>
         </div>
     )

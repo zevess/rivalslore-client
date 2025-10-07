@@ -5,8 +5,8 @@ import { SeasonPage } from "~/pages/season";
 
 export function meta({ matches}: Route.MetaArgs) {
     return [
-        { title: matches[2].loaderData.title },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: matches[2].loaderData.titleRu },
+        { name: "description", content: "Информация о " + matches[2].loaderData.titleRu },
     ];
 }
 

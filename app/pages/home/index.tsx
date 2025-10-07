@@ -15,6 +15,7 @@ export const HomePage: React.FC<Props> = ({ className }) => {
                 <h2 className="font-medium text-4xl text-center text-white">- сайт с официальным лором игры</h2>
                 <img src="app/shared/assets/rivals-logo.png" className="w-full max-w-[800px]" />
             </div>
+
         </div>
     )
 }

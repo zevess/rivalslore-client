@@ -4,6 +4,7 @@ export interface IEvent {
     id: string,
     documentId: string,
     title: string,
+    titleRu: string,
     slug: string,
     event_stories: IEventStory[]
     season: ISeason
@@ -13,7 +14,9 @@ export interface IEventStory {
     id: string,
     documentId: string,
     title: string,
+    titleRu: string,
     text: string,
+    textRu: string,
     image: IEventStoryImage
 }
 

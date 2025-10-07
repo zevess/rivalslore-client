@@ -7,7 +7,7 @@ interface Props {
     title: string,
     index: number,
     text: string,
-    image: string
+    image?: string
 }
 
 export const LocationStory: React.FC<Props> = ({ className, text, title, image, index }) => {
@@ -17,9 +17,10 @@ export const LocationStory: React.FC<Props> = ({ className, text, title, image, 
             <h2 className="text-4xl text-white text-center font-semibold">{title}</h2>
 
             {(index % 2 == 0) && <div className='flex flex-wrap justify-center items-start gap-8'>
-                <div className=''>
+
+                {image && <div className=''>
                     <StrapiImage className='w-full max-h-[600px]' src={image} alt={''} />
-                </div>
+                </div>}
 
                 <div className='flex flex-col gap-3 text-white text-xl w-[800px]'>
                     <ReactMarkdown>{text}</ReactMarkdown>
@@ -31,9 +32,9 @@ export const LocationStory: React.FC<Props> = ({ className, text, title, image, 
                     <ReactMarkdown>{text}</ReactMarkdown>
                 </div>
 
-                <div className=''>
+                {image && <div className=''>
                     <StrapiImage className='w-full max-h-[600px]' src={image} alt={''} />
-                </div>
+                </div>}
             </div>}
 
         </div>

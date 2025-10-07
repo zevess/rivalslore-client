@@ -5,7 +5,7 @@ import type { Route } from "./+types/heroes";
 export function meta({ }: Route.MetaArgs) {
     return [
         { title: "Герои" },
-        { name: "description", content: "Welcome to React Router!" },
+        { name: "description", content: "Список героев Marvel Rivals" },
     ];
 }
 

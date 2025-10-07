@@ -1,6 +1,4 @@
 import React from 'react'
-import { getNavigationItems } from '../header/model/hooks/getNavigationItems'
-import { Link } from 'react-router'
 import { getNavigationFooterItems } from './model/hooks/getNavigationFooterItems'
 
 interface Props {

@@ -9,11 +9,11 @@ interface Props {
 
 export const Item: React.FC<Props> = ({ className, item }) => {
     return (
-        <div className='flex items-center flex-col md:flex-row'>
+        <div className='flex items-center flex-col md:flex-row gap-4'>
             <StrapiImage src={item.image.url} alt={''} />
             <div className='flex flex-col gap-2'>
-                <h2 className='uppercase font-semibold text-4xl'>{item.title}</h2>
-                <p className='text-xl'>{item.description}</p>
+                <h2 className='uppercase font-semibold text-4xl'>{item.titleRu}</h2>
+                <p className='text-xl'>{item.descriptionRu}</p>
             </div>
         </div>
     )

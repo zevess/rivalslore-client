@@ -3,6 +3,10 @@ export interface IItem {
     documentId: string,
     title: string,
     description: string,
+
+    titleRu: string,    
+    descriptionRu: string,
+
     image: IItemImage
 }
 

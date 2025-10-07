@@ -1,8 +1,6 @@
 import React from 'react'
 import { Logo } from '~/shared/ui/logo'
 import { getNavigationItems } from './model/hooks/getNavigationItems'
-import { Link } from 'react-router'
-import { Menu } from 'lucide-react'
 import { DropdownButton } from '~/shared/ui/dropdown-button'
 import { getNavigationDropdownItems } from './model/hooks/getNavigationDropdownItems'
 

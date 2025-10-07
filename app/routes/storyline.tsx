@@ -4,8 +4,8 @@ import { StorylinePage } from "~/pages/storyline";
 
 export function meta({ matches }: Route.MetaArgs) {
     return [
-        { title: matches[2].loaderData.titleRu },
-        { name: "description", content: "Welcome to React Router!" },
+        { title: "Сюжет " + matches[2].loaderData.titleRu },
+        { name: "description", content: "Пересказ сюжета " + matches[2].loaderData.titleRu},
     ];
 }
 

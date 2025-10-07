@@ -1,8 +1,6 @@
 import React from 'react'
 import type { ISeason } from '~/entities/season/model/season.types'
-import { Separator } from '~/shared/ui/shadcn/separator'
 import { StrapiImage } from '~/shared/ui/strapi-image'
-import ReactMarkdown from 'react-markdown'
 import { SeasonStory } from '~/entities/season/ui/season-story'
 
 interface Props {

@@ -1,5 +1,5 @@
 import React from 'react'
-import type { IHero, IHeroResponse } from '~/entities/hero/model/hero.types'
+import type { IHero } from '~/entities/hero/model/hero.types'
 import { HeroInfo } from '~/entities/hero/ui/hero-info'
 import { HeroStoryButton } from '~/entities/hero/ui/hero-story-button'
 
