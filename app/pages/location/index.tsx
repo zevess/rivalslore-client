@@ -12,7 +12,7 @@ interface Props {
 export const LocationPage: React.FC<Props> = ({ className, location }) => {
     return (
         <div className="flex flex-col gap-6 text-white">
-            <h1 className="text-6xl text-white text-center font-semibold uppercase">{location.titleRu}</h1>
+            <h1 className="text-2xl md:text-6xl text-white text-center font-semibold uppercase text-wrap">{location.titleRu}</h1>
             <div className='flex flex-col items-center gap-4'>
                 <div className='flex justify-center'>
                     <StrapiImage className='w-fit max-h-[600px]' src={location.preview.url} alt={''} />
