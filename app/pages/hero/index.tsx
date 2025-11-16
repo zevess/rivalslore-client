@@ -2,6 +2,7 @@ import React from 'react'
 import type { IHero } from '~/entities/hero/model/hero.types'
 import { HeroInfo } from '~/entities/hero/ui/hero-info'
 import { HeroStoryButton } from '~/entities/hero/ui/hero-story-button'
+import useLanguage from '~/shared/hooks/useLanguage'
 
 import { StrapiImage } from '~/shared/ui/strapi-image'
 
@@ -11,6 +12,8 @@ interface Props {
 }
 
 export const HeroPage: React.FC<Props> = ({ className, hero }) => {
+
+    const lang = useLanguage()
 
     React.useEffect(() => {
         document.body.classList.add('no-scrollbar');
@@ -33,7 +36,7 @@ export const HeroPage: React.FC<Props> = ({ className, hero }) => {
                     <div className="flex flex-wrap lg:flex-nowrap">
                         <HeroInfo hero={hero} />
                         <StrapiImage src={hero.portrait.url} alt={''} className="w-full lg:w-3/5 object-contain" />
-                        <div className="text-white p-10 mt-10 text-xl lg:hidden backdrop-blur-lg mask-x-from-95% mask-x-to-100% mask-y-from-95% mask-y-to-100%">{hero.biographyRu}</div>
+                        <div className="text-white p-10 mt-10 text-xl lg:hidden backdrop-blur-lg mask-x-from-95% mask-x-to-100% mask-y-from-95% mask-y-to-100%">{lang === 'eng' ? hero.biography : hero.biographyRu}</div>
 
                     </div>
 
@@ -45,10 +48,10 @@ export const HeroPage: React.FC<Props> = ({ className, hero }) => {
 
                     <div className="flex flex-col justify-center w-full lg:w-1/2">
 
-                        <span className="text-white text-3xl">ИСТОРИИ</span>
+                        <span className="text-white text-3xl">{lang === 'eng' ? "STORIES" : "ИСТОРИИ"}</span>
                         <div className="flex flex-col">
                             {hero.hero_stories.map((hero_story, index) => (
-                                <HeroStoryButton key={index} storyText={hero_story.textRu} storyTitle={hero_story.titleRu} storyImage={hero_story.image.url} />
+                                <HeroStoryButton key={index} storyText={lang === 'eng' ? hero_story.text : hero_story.textRu} storyTitle={lang === 'eng' ? hero_story.title : hero_story.titleRu} storyImage={hero_story.image.url} />
                             ))}
                         </div>
                     </div>

@@ -22,7 +22,19 @@
       "routes/location": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/items": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
       "routes/storylines": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
-      "routes/storyline": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+      "routes/storyline": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/heroes": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/hero": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/seasons": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/season": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/events": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/event": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/locations": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/location": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/items": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/storylines": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/eng/storyline": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
     },
     "routes": {
       "root": {
@@ -122,6 +134,90 @@
         "file": "app/routes/storyline.tsx",
         "path": "storylines/:slug",
         "config": {}
+      },
+      "routes/eng/home": {
+        "id": "routes/eng/home",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/home.tsx",
+        "path": "eng",
+        "config": {}
+      },
+      "routes/eng/heroes": {
+        "id": "routes/eng/heroes",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/heroes.tsx",
+        "path": "eng/heroes",
+        "config": {}
+      },
+      "routes/eng/hero": {
+        "id": "routes/eng/hero",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/hero.tsx",
+        "path": "eng/heroes/:slug",
+        "config": {}
+      },
+      "routes/eng/seasons": {
+        "id": "routes/eng/seasons",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/seasons.tsx",
+        "path": "eng/seasons",
+        "config": {}
+      },
+      "routes/eng/season": {
+        "id": "routes/eng/season",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/season.tsx",
+        "path": "eng/seasons/:slug",
+        "config": {}
+      },
+      "routes/eng/events": {
+        "id": "routes/eng/events",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/events.tsx",
+        "path": "eng/events",
+        "config": {}
+      },
+      "routes/eng/event": {
+        "id": "routes/eng/event",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/event.tsx",
+        "path": "eng/events/:slug",
+        "config": {}
+      },
+      "routes/eng/locations": {
+        "id": "routes/eng/locations",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/locations.tsx",
+        "path": "eng/locations",
+        "config": {}
+      },
+      "routes/eng/location": {
+        "id": "routes/eng/location",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/location.tsx",
+        "path": "eng/locations/:slug",
+        "config": {}
+      },
+      "routes/eng/items": {
+        "id": "routes/eng/items",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/items.tsx",
+        "path": "eng/items",
+        "config": {}
+      },
+      "routes/eng/storylines": {
+        "id": "routes/eng/storylines",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/storylines.tsx",
+        "path": "eng/storylines",
+        "config": {}
+      },
+      "routes/eng/storyline": {
+        "id": "routes/eng/storyline",
+        "parentId": "widgets/layout/index",
+        "file": "app/routes/eng/storyline.tsx",
+        "path": "eng/storylines/:slug",
+        "config": {}
       }
     }
   },
@@ -218,6 +314,78 @@
         "parentId": "widgets/layout/index",
         "file": "routes/storyline.tsx",
         "path": "storylines/:slug"
+      },
+      "routes/eng/home": {
+        "id": "routes/eng/home",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/home.tsx",
+        "path": "eng"
+      },
+      "routes/eng/heroes": {
+        "id": "routes/eng/heroes",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/heroes.tsx",
+        "path": "eng/heroes"
+      },
+      "routes/eng/hero": {
+        "id": "routes/eng/hero",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/hero.tsx",
+        "path": "eng/heroes/:slug"
+      },
+      "routes/eng/seasons": {
+        "id": "routes/eng/seasons",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/seasons.tsx",
+        "path": "eng/seasons"
+      },
+      "routes/eng/season": {
+        "id": "routes/eng/season",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/season.tsx",
+        "path": "eng/seasons/:slug"
+      },
+      "routes/eng/events": {
+        "id": "routes/eng/events",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/events.tsx",
+        "path": "eng/events"
+      },
+      "routes/eng/event": {
+        "id": "routes/eng/event",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/event.tsx",
+        "path": "eng/events/:slug"
+      },
+      "routes/eng/locations": {
+        "id": "routes/eng/locations",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/locations.tsx",
+        "path": "eng/locations"
+      },
+      "routes/eng/location": {
+        "id": "routes/eng/location",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/location.tsx",
+        "path": "eng/locations/:slug"
+      },
+      "routes/eng/items": {
+        "id": "routes/eng/items",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/items.tsx",
+        "path": "eng/items"
+      },
+      "routes/eng/storylines": {
+        "id": "routes/eng/storylines",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/storylines.tsx",
+        "path": "eng/storylines"
+      },
+      "routes/eng/storyline": {
+        "id": "routes/eng/storyline",
+        "parentId": "widgets/layout/index",
+        "file": "routes/eng/storyline.tsx",
+        "path": "eng/storylines/:slug"
       }
     },
     "routeDiscovery": {
@@ -283,6 +451,54 @@
               {
                 "file": "routes/storyline.tsx",
                 "path": "storylines/:slug"
+              },
+              {
+                "file": "routes/eng/home.tsx",
+                "path": "eng"
+              },
+              {
+                "file": "routes/eng/heroes.tsx",
+                "path": "eng/heroes"
+              },
+              {
+                "file": "routes/eng/hero.tsx",
+                "path": "eng/heroes/:slug"
+              },
+              {
+                "file": "routes/eng/seasons.tsx",
+                "path": "eng/seasons"
+              },
+              {
+                "file": "routes/eng/season.tsx",
+                "path": "eng/seasons/:slug"
+              },
+              {
+                "file": "routes/eng/events.tsx",
+                "path": "eng/events"
+              },
+              {
+                "file": "routes/eng/event.tsx",
+                "path": "eng/events/:slug"
+              },
+              {
+                "file": "routes/eng/locations.tsx",
+                "path": "eng/locations"
+              },
+              {
+                "file": "routes/eng/location.tsx",
+                "path": "eng/locations/:slug"
+              },
+              {
+                "file": "routes/eng/items.tsx",
+                "path": "eng/items"
+              },
+              {
+                "file": "routes/eng/storylines.tsx",
+                "path": "eng/storylines"
+              },
+              {
+                "file": "routes/eng/storyline.tsx",
+                "path": "eng/storylines/:slug"
               }
             ]
           }

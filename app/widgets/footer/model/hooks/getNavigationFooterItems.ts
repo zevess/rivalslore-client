@@ -2,15 +2,17 @@ import { PUBLIC_URL } from "~/shared/config/url.config";
 import type { INavItem } from "~/widgets/header/model/types";
 
 
-export const getNavigationFooterItems = (): INavItem[] => {
+export const getNavigationFooterItems = (lang: 'eng' | 'rus'): INavItem[] => {
     return [
         {
-            title: 'ГЕРОИ',
-            url: PUBLIC_URL.heroes()
+            title: 'HEROES',
+            titleRu: "ГЕРОИ",
+            url: lang === 'eng' ? PUBLIC_URL.heroesEng() : PUBLIC_URL.heroes()
         },
         {
-            title: "СЕЗОНЫ",
-            url: PUBLIC_URL.seasons()
+            title: "SEASONS",
+            titleRu: "СЕЗОНЫ",
+            url: lang === 'eng' ? PUBLIC_URL.seasonsEng() : PUBLIC_URL.seasons()
         },
     ]
 }

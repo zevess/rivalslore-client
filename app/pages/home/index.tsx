@@ -1,18 +1,24 @@
 import React from 'react'
+import { useLocation } from 'react-router'
+import useLanguage from '~/shared/hooks/useLanguage'
 
 interface Props {
     className?: string
 }
 
 export const HomePage: React.FC<Props> = ({ className }) => {
+
+    const lang = useLanguage()
+
     return (
 
         <div className="flex flex-col items-center gap-4 h-full w-full">
             <img src="/bg.jpg" className="mask-x-from-80% mask-x-to-100% mask-y-from-90% mask-y-to-100%  bg-no-repeat" alt="" />
 
             <div className="flex flex-col items-center gap-4">
-                <h1 className="font-extrabold text-4xl md:text-7xl text-center text-white">Добро пожаловать <br /> в RIVALSLORE</h1>
-                <h2 className="font-medium text-4xl text-center text-white">- сайт с официальным лором игры</h2>
+                {lang === 'eng' ? <h1 className="font-extrabold text-4xl md:text-7xl text-center text-white">Welcome to <br /> RIVALSLORE </h1> : <h1 className="font-extrabold text-4xl md:text-7xl text-center text-white">Добро пожаловать <br /> в RIVALSLORE </h1>}
+
+                <h2 className="font-medium text-4xl text-center text-white"> {lang === 'eng' ? "- site about official in-game lore " : "- сайт с официальным лором игры"}</h2>
                 <img src="/rivals-logo.png" className="w-full max-w-[800px]" />
             </div>
 

@@ -1,0 +1,20 @@
+import { locationService } from "~/entities/location/model/location.service";
+import { LocationsPage } from "~/pages/locations";
+import type { Route } from "./+types/locations";
+
+export function meta({ matches }: Route.MetaArgs) {
+    return [
+        { title: "Locations" },
+        { name: "description", content: "Marvel Rivals locations" },
+    ];
+}
+
+export async function loader({ params }: Route.LoaderArgs) {
+    const locationsData = await locationService.getAllLocations()
+    console.log(locationsData.data)
+    return locationsData.data
+}
+
+export default function Locations({ loaderData }: Route.ComponentProps) {
+    return <LocationsPage locations={loaderData}/>
+}

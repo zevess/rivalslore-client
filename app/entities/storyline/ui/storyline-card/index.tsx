@@ -2,6 +2,7 @@ import React from 'react'
 import type { IStoryline } from '../../model/storyline.types'
 import { PUBLIC_URL } from '~/shared/config/url.config'
 import { StrapiImage } from '~/shared/ui/strapi-image'
+import useLanguage from '~/shared/hooks/useLanguage'
 
 interface Props {
     className?: string,
@@ -9,8 +10,11 @@ interface Props {
 }
 
 export const StorylineCard: React.FC<Props> = ({ className, storyline }) => {
+    
+    const lang = useLanguage()
+    
     return (
-        <a href={PUBLIC_URL.storyline(storyline.slug)}>
+        <a href={lang === 'eng' ? PUBLIC_URL.storylineEng(storyline.slug) : PUBLIC_URL.storyline(storyline.slug)}>
             <div className="relative aspect-video w-fit max-h-64 group rounded-xl overflow-hidden">
                 <div className="w-full h-full overflow-hidden">
                     <StrapiImage
@@ -24,7 +28,7 @@ export const StorylineCard: React.FC<Props> = ({ className, storyline }) => {
 
                 <div className='absolute inset-0 flex items-center justify-center pointer-events-none'>
                     <p className='uppercase font-bold text-sm md:text-xl transition duration-200 group-hover:text-yellow-400'>
-                        {storyline.titleRu}
+                        { lang === 'eng' ? storyline.title : storyline.titleRu }
                     </p>
                 </div>
             </div>

@@ -18,6 +18,26 @@ export const PUBLIC_URL = {
     items: (url = '') => PUBLIC_URL.root(`/items${url}`),
 
     storylines: (url = '') => PUBLIC_URL.root(`/storylines${url}`),
-    storyline: (slug = '') => PUBLIC_URL.storylines(`/${slug}`)
+    storyline: (slug = '') => PUBLIC_URL.storylines(`/${slug}`),
+
+
+    homeEng: () => PUBLIC_URL.root('/eng'),
+
+    heroesEng: (url = '') => PUBLIC_URL.root(`/eng/heroes${url}`),
+    heroEng: (slug = '') => PUBLIC_URL.heroesEng(`/${slug}`),
+
+    eventsEng: (url = '') => PUBLIC_URL.root(`/eng/events${url}`),
+    eventEng: (slug = '') => PUBLIC_URL.eventsEng(`/${slug}`),
+
+    seasonsEng: (url = '') => PUBLIC_URL.root(`/eng/seasons${url}`),
+    seasonEng: (slug = '') => PUBLIC_URL.seasonsEng(`/${slug}`),
+
+    locationsEng: (url = '') => PUBLIC_URL.root(`/eng/locations${url}`),
+    locationEng: (slug = '') => PUBLIC_URL.locationsEng(`/${slug}`),
+
+    itemsEng: (url = '') => PUBLIC_URL.root(`/eng/items${url}`),
+
+    storylinesEng: (url = '') => PUBLIC_URL.root(`/eng/storylines${url}`),
+    storylineEng: (slug = '') => PUBLIC_URL.storylinesEng(`/${slug}`)
 
 }

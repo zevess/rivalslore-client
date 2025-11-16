@@ -1,6 +1,7 @@
 import React from 'react'
 import type { IItem } from '~/entities/item/model/item.types'
 import { Item } from '~/entities/item/ui/item'
+import useLanguage from '~/shared/hooks/useLanguage'
 
 interface Props {
     className?: string,
@@ -8,9 +9,12 @@ interface Props {
 }
 
 export const ItemsPage: React.FC<Props> = ({ className, items }) => {
+
+    const lang = useLanguage()
+
     return (
         <div className="flex flex-col gap-6">
-            <h1 className="text-4xl md:text-6xl text-white font-semibold flex justify-center">ПРЕДМЕТЫ</h1>
+            <h1 className="text-4xl md:text-6xl text-white font-semibold flex justify-center">{lang === 'eng' ? "ITEMS" : "ПРЕДМЕТЫ"}</h1>
             <div className="flex flex-col flex-wrap justify-center md:mx-16 gap-8">
                 {items.map((item, index) => (
                     <Item item={item} key={index} />

@@ -1,14 +1,17 @@
 import { Menu } from 'lucide-react'
 import React from 'react'
 import { Link } from 'react-router'
+import { cn } from '~/shared/lib/utils'
 import type { INavItem } from '~/widgets/header/model/types'
 
 interface Props {
     className?: string,
-    items: INavItem[]
+    items: INavItem[],
+    children: React.ReactNode,
+    variant: "MENU" | "LANGUAGE",
 }
 
-export const DropdownButton: React.FC<Props> = ({ className, items }) => {
+export const DropdownButton: React.FC<Props> = ({ className, items, children, variant }) => {
 
     const [isOpen, setIsOpen] = React.useState(false)
     const dropdownRef = React.useRef<HTMLDivElement>(null)
@@ -38,14 +41,14 @@ export const DropdownButton: React.FC<Props> = ({ className, items }) => {
     };
 
     return (
-        <div className="relative block md:hidden" ref={dropdownRef}>
+        <div className={cn("relative block md:hidden", className)} ref={dropdownRef}>
             <button
-                className={`p-4 text-white ${isOpen && "rotate-90"}`}
+                className={cn(`p-4 text-white`, isOpen && "rotate-90")}
                 onClick={handleMenuToggle}
                 aria-expanded={isOpen}
                 aria-haspopup="true"
             >
-                <Menu />
+                {children}
             </button>
 
             <div
